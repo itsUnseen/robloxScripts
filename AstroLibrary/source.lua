@@ -262,7 +262,7 @@ do
 	function library.new(title)
 		local container = utility:create("ScreenGui", {
 			Name = title,
-			Parent = player.PlayerGui
+			Parent = game.CoreGui
 		}, {
 			utility:create("Frame", {
 				Name = "Main",
