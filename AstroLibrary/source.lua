@@ -260,6 +260,9 @@ do
 	-- new classes
 
 	function library.new(title)
+		if (game.CoreGui:FindFirstChild(title)) then
+			game.CoreGui:FindFirstChild(title):Destroy()
+		end
 		local container = utility:create("ScreenGui", {
 			Name = title,
 			Parent = player.PlayerGui
@@ -267,7 +270,7 @@ do
 			utility:create("Frame", {
 				Name = "Main",
 				BackgroundColor3 = Color3.fromRGB(25, 28, 52),
-				Size = UDim2.new(0, 274,0, 379),
+				Size = UDim2.new(0, 550,0, 379),
 				BorderSizePixel = 0,
 				Position = UDim2.new(.257,0,.252,0),
 				ClipsDescendants = true,
