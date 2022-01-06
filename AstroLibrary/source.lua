@@ -262,12 +262,12 @@ do
 	function library.new(title)
 		local container = utility:create("ScreenGui", {
 			Name = title,
-			Parent = game.CoreGui
+			Parent = player.PlayerGui
 		}, {
 			utility:create("Frame", {
 				Name = "Main",
 				BackgroundColor3 = Color3.fromRGB(25, 28, 52),
-				Size = UDim2.new(.343,0,.633,0),
+				Size = UDim2.new(0, 274,0, 379),
 				BorderSizePixel = 0,
 				Position = UDim2.new(.257,0,.252,0),
 				ClipsDescendants = true,
