@@ -3,7 +3,7 @@ local env = {}
 --// SERVICES
 local replicatedStoreage = game.ReplicatedStorage
 
-local tweenService = game:Getservice("TweenService")
+local tweenService = game:GetService("TweenService")
 local runService = game:GetService("RunService")
 
 --// VARIABLES
