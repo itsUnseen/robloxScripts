@@ -19,7 +19,7 @@ function env:Distance(P1, P2)
 end
 
 function env:Lerp(num, endNum, t, d)
-    return nim + (endNum - num) * (t / (d or 100))
+    return num + (endNum - num) * (t / (d or 100))
 end
 
 function env:FindClosestPart(P1, P2, P3, P4)
