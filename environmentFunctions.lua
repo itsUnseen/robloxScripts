@@ -35,6 +35,8 @@
                 end
             end
         end
+
+        return closestPlayer
     end
 
     function env:Lerp(num, endNum, t, d)
