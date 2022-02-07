@@ -217,7 +217,7 @@ do
 		end
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-			Parent = game.Players.LocalPlayer.PlayerGui,
+			Parent = game.CoreGui,
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Main",
