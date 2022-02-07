@@ -18,6 +18,24 @@ function env:Distance(P1, P2)
     return (P1 - P2).magnitude
 end
 
+function env:FindClosestPlayerToMouse(x,y)
+    local closestPlayer = nil
+    local maxDistance = math.huge
+
+    for i,v in pairs (game.Players:GetPlayers()) do
+
+        if (v ~= player and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Head")) then
+            local worldPointPos = camera:WorldToViewportPoint(v.Character.PrimaryPart.Position)
+            local magnitude = (Vector2.new(worldPointPos.X, worldPointPos.Y) - Vector2.new(x,y)).magnitude
+
+            if (magnitude < maxDistance) then
+                closestPlayer = v
+                maxDistance = magnitude
+            end
+        end
+    end
+end
+
 function env:Lerp(num, endNum, t, d)
     return num + (endNum - num) * (t / (d or 100))
 end
