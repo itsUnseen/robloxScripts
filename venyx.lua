@@ -218,6 +218,7 @@ do
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.Players.LocalPlayer.PlayerGui,
+			ResetOnSpawn = false,
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Main",
