@@ -295,9 +295,7 @@ do
 			})
 		})
 		
-		if (syn.protect_gui) then
-			syn.protect_gui(container)
-		end
+		syn.protect_gui(container)
 		
 		utility:InitializeKeybind()
 		utility:DraggingEnabled(container.Main.TopBar, container.Main)
