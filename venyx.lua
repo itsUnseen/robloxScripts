@@ -2175,5 +2175,4 @@ do
 	end
 end
 
-print("dino was here :\)")
 return library
