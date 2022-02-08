@@ -212,12 +212,12 @@ do
 	-- new classes
 	
 	function library.new(title)
-		if (game.CoreGui:FindFirstChild(title)) then
-			game.CoreGui[title]:Destroy()
+		if (game.Players.LocalPlayer.PlayerGui:FindFirstChild(title)) then
+			game.Players.LocalPlayer.PlayerGui[title]:Destroy()
 		end
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-			Parent = game.CoreGui,
+			Parent = game.Players.LocalPlayer.PlayerGui,
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Main",
