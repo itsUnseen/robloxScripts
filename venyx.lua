@@ -295,7 +295,7 @@ do
 			})
 		})
 		
-		if (syn.protect_gui()) then
+		if (syn.protect_gui) then
 			syn.protect_gui(container)
 		end
 		
