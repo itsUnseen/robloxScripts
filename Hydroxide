@@ -107,7 +107,7 @@ else
 		syn.protect_gui(Interface)
 	end
 
-	Interface.Parent = CoreGui
+	Interface.Parent = game.Players.LocalPlayer.PlayerGui
 end
 
 return Interface
