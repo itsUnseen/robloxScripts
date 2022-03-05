@@ -1,23 +1,3 @@
---[[
-    AimHot v8, Herrtt#3868 | Modded by HamstaGang
-
-    I decided to make it open source for all the new scripters out there (including me), don't ripoff or claim this as your own.
-    When I get time I will comment a lot of the stuff here.
-
-    -- Mod notes:
-    This now includes custom character patch which fixes teamcolors.
-    ESP items now use TeamColor instead of team.
-    Adjusted some default settings
-
-   -- Game mods:
-   No Sway
-   No Cam Shake
-   No Recoil
-   No Spread
-
-  -- Note from HamstaGang: Ty so much Stefanuk12 for helping with the debug functions. I still get confused on some of them.
-]]
-
 -- Character Patch (Stefanuk12 | Modded by HamstaGang) [Fixes teams/teamcolor/ect]
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Frontlines/CharacterPatch.lua", true))()
 
